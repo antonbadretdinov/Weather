@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="city_name">Saint-Petersburg</string>
+    <string name="details">Details</string>
+    <string name="forecast">Forecast</string>
+
+    <string name="temp">Temperature:\u0020</string>
+    <string name="feels_like">Feels like:\u0020</string>
+    <string name="temp_min">Minimum temperature:\u0020</string>
+    <string name="temp_max">Maximum temperature:\u0020</string>
+    <string name="pressure">Pressure:\u0020</string>
+    <string name="humidity">Humidity:\u0020</string>
+    <string name="wind_spd">Wind speed:\u0020</string>
+    <string name="description">Description:\u0020</string>
+
+    <string name="temp_metric">°C</string>
+    <string name="pressure_metric">\u0020hPa</string>
+    <string name="humidity_metric">%</string>
+    <string name="wind_speed_metric">\u0020m/sec</string>
+
+    <string name="time">Time:\u0020</string>
+    <string name="date">Date:\u0020</string>
+    <string name="weather_forecast">Forecast for 5 days</string>
+    <string name="try_again">Try again</string>
+</resources>
