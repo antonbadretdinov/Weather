@@ -1,10 +1,12 @@
 package com.example.weather
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import com.example.weather.databinding.ActivityMainBinding
+import com.example.weather.helpers.hasInternetConnection
 import com.example.weather.viewmodels.MainViewModel
 
 class MainActivity : AppCompatActivity() {
@@ -18,8 +20,13 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        viewModel.getDetails()
-        viewModel.getForecast()
+        if(hasInternetConnection()){
+            viewModel.getDetails()
+            viewModel.getForecast()
+        }else{
+            Toast.makeText(this, "No internet connection", Toast.LENGTH_SHORT).show()
+        }
+
 
         val navHostFragment = supportFragmentManager
             .findFragmentById(R.id.fragmentContainerView) as NavHostFragment
